@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import router from 'next/router'
 
 export default function Homepage() {
   return (
@@ -12,10 +13,10 @@ export default function Homepage() {
         <div className="sign-in">
             <p className=' text-3xl font-extrabold'>Sign in </p>
             <div className=' flex flex-col text-white py-6'>
-                <button className=' bg-gray-700 py-4 rounded-lg mb-5 hover:bg-gray-500'>Continue as Administrator</button>
-                <button className=' bg-purple-600 hover:bg-purple-500 py-4 rounded-lg mb-5'>Continue as Supervisor</button>
+               <div className=' bg-gray-700 py-4 rounded-lg mb-5 hover:bg-gray-500 justify-center flex'><button onClick={() => router.push('/admin/AdminLogin')}>Continue as Administrator</button></div> 
+               <div className=' bg-purple-600 hover:bg-purple-500 py-4 rounded-lg mb-5 justify-center flex'> <button onClick={() => router.push('/supervisor/SupervisorLogin')}>Continue as Supervisor</button></div>
                 
-            <Link href="/student"> <button className='bg-blue-700 hover:bg-blue-500 py-4 rounded-lg mb-5'>Continue as Student</button></Link>
+            <div className='bg-blue-700 hover:bg-blue-500 py-4 rounded-lg mb-5 justify-center flex'><Link href="/student/StudentLogin"> <button>Continue as Student</button></Link></div>
             </div>
         </div>
         </div>
