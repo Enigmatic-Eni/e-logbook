@@ -1,4 +1,4 @@
-import Home from '@/components/home'
+import Home from '@/components/homepage'
 import React from 'react'
 
 export default function test() {

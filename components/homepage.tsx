@@ -1,6 +1,7 @@
 import React from 'react'
+import Link from 'next/link'
 
-export default function Home() {
+export default function Homepage() {
   return (
     <div className=' flex justify-center p-3'>
         <div className=' lg:w-[40%]'>
@@ -13,7 +14,8 @@ export default function Home() {
             <div className=' flex flex-col text-white py-6'>
                 <button className=' bg-gray-700 py-4 rounded-lg mb-5 hover:bg-gray-500'>Continue as Administrator</button>
                 <button className=' bg-purple-600 hover:bg-purple-500 py-4 rounded-lg mb-5'>Continue as Supervisor</button>
-                <button className='bg-blue-700 hover:bg-blue-500 py-4 rounded-lg mb-5'>Continue as Student</button>
+                
+            <Link href="/student"> <button className='bg-blue-700 hover:bg-blue-500 py-4 rounded-lg mb-5'>Continue as Student</button></Link>
             </div>
         </div>
         </div>
