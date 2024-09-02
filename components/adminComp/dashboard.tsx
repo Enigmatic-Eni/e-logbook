@@ -26,8 +26,8 @@ export default function Dashboard() {
         },
         {
             icon: <RiMegaphoneFill />,
-            path: ` /${router.query}/admin/AdminLogin`,
-            name: "Post Announcement" 
+            path: ``,
+            name: "Post Announcement"
         }
     ]
 
@@ -38,8 +38,8 @@ export default function Dashboard() {
         <div className=' flex flex-col gap-9 '>
             {links.map((items, index) =>
             <div key={index}>
-                <Link href={items.path} key={index}>
-                <button className={` ${router.asPath === items.path} flex gap-5 hover:text-green-400 items-center`}>
+                <Link href="#" key={index}>
+                <button className={` flex gap-5 hover:text-green-400 items-center`}>
                     <p>{items.icon}</p>
                     <p className=''>{items.name}</p>
                 </button>
