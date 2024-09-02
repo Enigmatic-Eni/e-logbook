@@ -4,6 +4,7 @@ import React from 'react'
 import { IoPersonOutline } from "react-icons/io5";
 import { FaPen } from "react-icons/fa";
 import { CiLogout, CiViewList } from "react-icons/ci";
+import { RiMegaphoneFill } from "react-icons/ri";
 
 export default function Dashboard() {
 
@@ -22,18 +23,23 @@ export default function Dashboard() {
             icon: <CiViewList/>,
             path: ``,
             name: "View Students"
+        },
+        {
+            icon: <RiMegaphoneFill />,
+            path: ` /${router.query}/admin/AdminLogin`,
+            name: "Post Announcement" 
         }
     ]
 
   return (
-    <div className=' bg-gray-700 w-full md:w-[22%] text-white pl-5 py-4 h-screen m-0'>
+    <div className=' bg-gray-700 w-full  text-white pl-5 py-4 h-screen m-0'>
         <div className=' text-xl font-extrabold pb-20'>E-Siwes Portal</div>
        
         <div className=' flex flex-col gap-9 '>
             {links.map((items, index) =>
             <div key={index}>
-                <Link href="#" key={index}>
-                <button className={` flex gap-5 hover:text-green-400 items-center`}>
+                <Link href={items.path} key={index}>
+                <button className={` ${router.asPath === items.path} flex gap-5 hover:text-green-400 items-center`}>
                     <p>{items.icon}</p>
                     <p className=''>{items.name}</p>
                 </button>

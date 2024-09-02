@@ -18,7 +18,7 @@ export default function Homepage() {
                 
             <div className='bg-blue-700 hover:bg-blue-500 py-4 rounded-lg mb-5 justify-center flex'><Link href="/student/StudentLogin"> <button>Continue as Student</button></Link></div>
             </div>
-        </div>
+        </div>    
         </div>
     </div>
   )
