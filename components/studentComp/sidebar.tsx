@@ -6,7 +6,7 @@ import { FaPen } from "react-icons/fa";
 import { CiLogout, CiViewList } from "react-icons/ci";
 import { RiMegaphoneFill } from "react-icons/ri";
 
-export default function Dashboard() {
+export default function Sidebar() {
 
     const links = [
         {
