@@ -17,17 +17,17 @@ export default function Dashboard() {
         {
             icon: <FaPen/>,
             path: ``,
-            name: "Create Student Profile"
+            name: "Supervisor"
         },
         {
             icon: <CiViewList/>,
             path: ``,
-            name: "View Students"
+            name: "Documents"
         },
         {
             icon: <RiMegaphoneFill />,
             path: ``,
-            name: "Post Announcement"
+            name: "Logbook"
         }
     ]
 

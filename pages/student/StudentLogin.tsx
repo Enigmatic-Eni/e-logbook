@@ -1,3 +1,4 @@
+import Router from 'next/router'
 import React from 'react'
 
 export default function StudentLogin() {
@@ -16,7 +17,7 @@ export default function StudentLogin() {
         <input type="password" className='border-2 border-gray-400 p-3 my-4 rounded-lg focus:border-blue-500 outline-none' placeholder='Enter your password'/>
         </div>
 <div className=' flex flex-col mt-6'>
-        <button className=' bg-blue-700 hover:bg-blue-500 py-4 rounded-lg mb-5 justify-center flex text-white font-bold'>Enter</button>
+        <button onClick={() => Router.push('./studentHome')} className=' bg-blue-700 hover:bg-blue-500 py-4 rounded-lg mb-5 justify-center flex text-white font-bold'>Enter</button>
         </div>
         </div>
         </div>

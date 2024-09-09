@@ -17,7 +17,7 @@ export default function AdminLogin() {
       <input type="password" className='border-2 border-gray-400 p-3 my-4 rounded-lg focus:border-gray-700 outline-none' placeholder='Enter your password'/>
       </div>
 <div className=' flex flex-col mt-6'>
-      <button onClick={() => Router.push('./adminHome')} className=' bg-gray-700 hover:bg-gray-500 py-4 rounded-lg mb-5 justify-center flex text-white font-bold'>Enter</button>
+      <button onClick={() => Router.push('./adminProfile')} className=' bg-gray-700 hover:bg-gray-500 py-4 rounded-lg mb-5 justify-center flex text-white font-bold'>Enter</button>
       </div>
       </div>
       </div>
